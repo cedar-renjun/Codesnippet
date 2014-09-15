@@ -1,0 +1,20 @@
+这里记录一些常用的代码片段
+
+1：ProtocalParser
+   用于解析下面的数据结构
+
+    #pragma pack(1)
+    typedef struct
+    {
+        uint8_t Hdr[3];                          // Frame Start Flag 0xA6 0xA6 0xA6
+        uint8_t DstDev : 4;                      // Destination Device
+        uint8_t SrcDev : 4;                      // Source Device
+        uint8_t Seq;                             // Sequence Number
+        uint8_t Cmd;                             // Command Type
+        uint8_t DeskID;                          // The ID of desk
+        uint8_t CardID;                          // The ID of Card(Menu)
+        uint8_t Resv[3];                         // Reserved
+        uint8_t Ecc;                             // XOR Checksum
+    }CMD_FRAME_t;
+
+注：不定期增加ing
