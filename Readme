@@ -17,4 +17,12 @@
         uint8_t Ecc;                             // XOR Checksum
     }CMD_FRAME_t;
 
-注：不定期增加ing
+2: SoftTimer
+    用于状态机中，接管系统时间资源，对外提供统一API，有效避免使用软件delay
+
+
+注：
+
+1.  不定期增加ing
+2.  欢迎交流
+    QQ：819280802
